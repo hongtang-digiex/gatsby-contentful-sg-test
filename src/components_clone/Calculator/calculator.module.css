@@ -1,0 +1,113 @@
+.container {
+  background: rgba(52, 60, 84, 255);
+  padding: 2rem;
+  width: 50%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bolder;
+  color: white;
+}
+.description {
+  font-size: small;
+  color: rgb(218, 218, 218);
+  font-weight: thin;
+}
+
+.label {
+  color: white;
+}
+
+.formInputPrices {
+  padding: 16px;
+
+  display: grid;
+  row-gap: 15px;
+  column-gap: 1rem;
+  grid-template-columns: auto auto;
+}
+
+.inputElement {
+  display: flex;
+  flex-direction: column;
+}
+
+/* slider track */
+input[type='range']::-webkit-slider-runnable-track {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  height: 0.8rem;
+}
+
+/* slider thumb */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -2px; /* Centers thumb on the track */
+  background: #e5a61f;
+  border-radius: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+input[type='range']:focus::-webkit-slider-thumb {
+  outline: 3px solid #e5a61f;
+  outline-offset: 0.125rem;
+}
+
+.formInputPrices,
+.results {
+  font-size: x-small;
+  color: white;
+}
+
+.priceText {
+  background: none;
+  font-weight: bolder;
+  font-size: x-large;
+  color: #ff783a;
+}
+
+.textBlockTitle {
+  font-size: 48px;
+}
+
+.textBlockDescription {
+  font-size: small;
+  font-weight: thin;
+}
+
+.loan,
+.repayment {
+  font-size: large;
+}
+
+@media (max-width: 768px) {
+  .priceText {
+    font-size: 16px;
+  }
+  .textBlockTitle,
+  .title {
+    font-size: 20px;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .formInputPrices {
+    display: block;
+  }
+  .description,
+  .textBlockDescription {
+    font-size: x-small;
+  }
+}

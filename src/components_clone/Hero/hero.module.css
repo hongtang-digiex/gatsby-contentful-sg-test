@@ -1,0 +1,48 @@
+.hero {
+  padding: 3rem;
+  background: rgba(52, 60, 84, 255);
+
+  justify-content: space-between;
+  padding-bottom: 9rem;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bolder;
+  color: white;
+}
+.description {
+  font-size: small;
+  color: rgb(218, 218, 218);
+  font-weight: thin;
+}
+.item1 {
+  position: relative;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 300px;
+  width: 330px;
+  background-image: url('../../../static/images/finance.png');
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 320px) {
+  .description {
+      font-size: x-small;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
