@@ -1,5 +1,6 @@
 .nav-link {
   color: rgb(201, 201, 201);
+
 }
 
 .active-nav-link {
@@ -61,5 +62,4 @@
 }
 
 @media (max-width) {
-    
 }

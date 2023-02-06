@@ -12,10 +12,19 @@ export default function RootIndex() {
   const { width } = useWindowSize()
   return (
     <>
-      <div style={{ backgroundColor: 'rgba(250,253,255,255)' }}>
+      <div
+        style={{
+          backgroundColor: 'rgba(250,253,255,255)',
+          padding: width > 1024 ? '0 10rem' : 0,
+        }}
+      >
         <Hero navbar={<Navigation />} />
         <Cards />
-        <div style={{ display: width <= 768 ? 'block' : 'flex' }}>
+        <div
+          style={{
+            display: width <= 768 ? 'block' : 'flex',
+          }}
+        >
           <Calculator />
           <TextBlock />
         </div>

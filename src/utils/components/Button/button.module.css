@@ -4,4 +4,9 @@
   background: #ff783a;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #f55c16;
 }

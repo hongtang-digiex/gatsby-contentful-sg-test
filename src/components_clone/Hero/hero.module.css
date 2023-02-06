@@ -1,7 +1,7 @@
 .hero {
   padding: 3rem;
   background: rgba(52, 60, 84, 255);
-
+  margin: 0 -10rem;
   justify-content: space-between;
   padding-bottom: 9rem;
   position: relative;
@@ -40,7 +40,7 @@
 
 @media (max-width: 320px) {
   .description {
-      font-size: x-small;
+    font-size: x-small;
   }
   .title {
     font-size: 20px;
