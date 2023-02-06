@@ -5,6 +5,7 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
+  z-index: 30;
 }
 
 .button:hover {

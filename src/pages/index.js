@@ -6,12 +6,18 @@ import Cards from '../components_clone/Card/container'
 import Calculator from '../components_clone/Calculator/calculator'
 import TextBlock from '../components_clone/Calculator/textBlock'
 import Footer from '../components_clone/Footer/footer'
-import useWindowSize from '../custom-hooks/useWindow'
 
+import * as styles from './global.module.css'
+import Logo from '../../static/images/SDlogo.png'
+
+import useWindowSize from '../custom-hooks/useWindow'
 export default function RootIndex() {
   const { width } = useWindowSize()
   return (
-    <>
+    <div style={{ position: 'relative' }}>
+      <section className={styles.floatingLogo}>
+        <img src={Logo} alt="logo sd" />
+      </section>
       <div
         style={{
           backgroundColor: 'rgba(250,253,255,255)',
@@ -30,6 +36,6 @@ export default function RootIndex() {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
