@@ -46,7 +46,7 @@ export default function Calculator() {
     const r = price[3]
     const n = price[2]
 
-    return ((P * ((r * (1 + r)) ^ (n / ((1 + r) ^ n) - 1))) / r) | 0
+    return ((P * ((r * (1 + r)) ^ (n / ((1 + r) ^ n) - 1))) / (r * 12)) | 0
   }
 
   const formatter = new Intl.NumberFormat('en-US', {
