@@ -73,6 +73,8 @@ Feel free to open pull requests to fix bugs. If you want to add features, please
 You can learn more about how Contentful userland is organized by visiting [our about repository](https://github.com/contentful-userland/about).
 
 ## Environment variables
-- CONTENTFUL_SPACE_ID='w91en02h7ign'
-- CONTENTFUL_ACCESS_TOKEN='GpyadInqRzDThWxyjBcRODEY7-JuBWyVs5IcgEjm8h0'
+```sh
+CONTENTFUL_SPACE_ID=w91en02h7ign
+CONTENTFUL_ACCESS_TOKEN=GpyadInqRzDThWxyjBcRODEY7-JuBWyVs5IcgEjm8h0
+```
 
