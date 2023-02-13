@@ -1,0 +1,38 @@
+{
+  "name": "dang-khoa-microservices-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  
+    "credentials": "pm2 start ./app",
+    
+    "dev": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "color": "^4.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "express-session": "^1.17.3",
+    "geoip-lite": "^1.4.6",
+    "google-auth-library": "^8.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.6.0",
+    "node-geocoder": "^4.2.0",
+    "nodemailer": "^6.7.8",
+    "nodemailer-express-handlebars": "^5.0.0",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7",
+    "pm2": "^5.2.2",
+    "promise": "^8.2.0",
+    "twilio": "^3.82.0"
+  }
+}
