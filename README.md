@@ -49,7 +49,7 @@ This command will ask you for a space ID, and access tokens for the Contentful M
 `npm run setup` automates that for you but if you want to do it yourself rename `.contentful.json.sample` to `.contentful.json` and add your configuration in this file.
 
 ## Crucial Commands
-
+ 
 ### `npm run dev`
 
 Run the project locally with live reload in development mode.
