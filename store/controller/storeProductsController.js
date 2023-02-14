@@ -9,7 +9,7 @@ const query = (token, store_id) => ({
 const addProductToStore = async (req, res) => {
   try {
     const { token, product_id, store_id } = req.body;
-
+    
     const testingQuery = query(token, store_id);
     const instance = await Store.findOne(testingQuery);
 
@@ -63,6 +63,8 @@ const deleteAllProducts = async (req, res) => {
     res.status(500).json({ status: false, message: e.message });
   }
 };
+
+// 
 
 module.exports = {
   addProductToStore,
