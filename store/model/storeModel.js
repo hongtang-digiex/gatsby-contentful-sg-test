@@ -39,13 +39,8 @@ storeSchema.method.editCatalogId=function(idNew,oldId){
 }
 storeSchema.method.deleteCatalogId=function(catalogId){
   this.catalog_ids=this.catalog_ids.filter((id)=>id!=catalogId)
-
-
   return this.save();
-
 }
-
-
 
 
 const Store = mongoose.model("Store", storeSchema);
